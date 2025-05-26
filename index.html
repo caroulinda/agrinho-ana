@@ -3,9 +3,208 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Festejando a Conexão Campo-Cidade</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #2e8b57, #5cb85c);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .intro {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .feature {
+            flex: 1;
+            min-width: 300px;
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        
+        .feature:hover {
+            transform: translateY(-5px);
+        }
+        
+        .feature h3 {
+            color: #2e8b57;
+        }
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1rem;
+            margin-bottom: 3rem;
+        }
+        
+        .gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        
+        .testimonials {
+            background-color: #e9f5e9;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 3rem;
+        }
+        
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: #2e8b57;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 1rem;
+            transition: background-color 0.3s;
+        }
+        
+        .cta-button:hover {
+            background-color: #1f6b47;
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <div class="container">
+            <h1>Festejando a Conexão Campo-Cidade</h1>
+            <p>Celebrando a interdependência e harmonia entre o rural e o urbano</p>
+        </div>
+    </header>
     
+    <div class="container">
+        <section class="intro">
+            <h2>Uma relação essencial</h2>
+            <p>O campo e a cidade são realidades que se complementam. Enquanto o campo produz os alimentos e matérias-primas, a cidade oferece tecnologia, serviços e mercados. Juntos, formam um ciclo vital para nossa sociedade.</p>
+            <a href="#participate" class="cta-button">Participe do Projeto</a>
+        </section>
+        
+        <section class="features">
+            <div class="feature">
+                <h3>Alimentação</h3>
+                <p>O campo abastece as cidades com alimentos frescos e saudáveis, enquanto a cidade oferece mercados e canais de distribuição.</p>
+            </div>
+            
+            <div class="feature">
+                <h3>Cultura</h3>
+                <p>Tradições rurais e urbanas se misturam, criando uma rica diversidade cultural que enriquece a todos.</p>
+            </div>
+            
+            <div class="feature">
+                <h3>Sustentabilidade</h3>
+                <p>A conexão campo-cidade é fundamental para desenvolver soluções sustentáveis de produção e consumo.</p>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Galeria de Conexões</h2>
+            <div class="gallery">
+                <img src="https://source.unsplash.com/random/300x200/?farm" alt="Agricultura">
+                <img src="https://source.unsplash.com/random/300x200/?market" alt="Feira urbana">
+                <img src="https://source.unsplash.com/random/300x200/?rural" alt="Vida rural">
+                <img src="https://source.unsplash.com/random/300x200/?city" alt="Vida urbana">
+                <img src="https://source.unsplash.com/random/300x200/?transport" alt="Transporte de alimentos">
+                <img src="https://source.unsplash.com/random/300x200/?community" alt="Comunidade">
+            </div>
+        </section>
+        
+        <section class="testimonials">
+            <h2>Depoimentos</h2>
+            <p>"Como produtor rural, vejo como é importante essa conexão com a cidade. É gratificante saber que nosso trabalho alimenta tantas famílias." - João, agricultor</p>
+            <p>"Morando na cidade, valorizo cada vez mais o trabalho no campo. Participar de feiras de produtores me conectou com a origem dos alimentos." - Maria, urbanista</p>
+        </section>
+        
+        <section id="participate">
+            <h2>Como Participar</h2>
+            <p>Junte-se a nós para fortalecer essa conexão:</p>
+            <ul>
+                <li>Visite feiras de produtores locais</li>
+                <li>Conheça propriedades rurais próximas à sua cidade</li>
+                <li>Participe de eventos que celebram essa relação</li>
+                <li>Compre diretamente de pequenos produtores</li>
+            </ul>
+        </section>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>Projeto "Festejando a Conexão Campo-Cidade" - Promovendo o diálogo e a integração</p>
+            <p>Contato: contato@campocidade.org.br | (XX) XXXX-XXXX</p>
+        </div>
+    </footer>
+    
+    <script>
+        // Interatividade simples
+        document.addEventListener('DOMContentLoaded', function() {
+            const features = document.querySelectorAll('.feature');
+            
+            features.forEach(feature => {
+                feature.addEventListener('click', function() {
+                    this.style.backgroundColor = '#f0fff0';
+                    setTimeout(() => {
+                        this.style.backgroundColor = 'white';
+                    }, 500);
+                });
+            });
+            
+            // Simulação de cadastro no projeto
+            const ctaButton = document.querySelector('.cta-button');
+            ctaButton.addEventListener('click', function(e) {
+                e.preventDefault();
+                const name = prompt('Ótimo que quer participar! Qual seu nome?');
+                if (name) {
+                    alert(`Obrigado, ${name}! Em breve entraremos em contato com mais informações.`);
+                }
+            });
+        });
+    </script>
 </body>
 </html>
